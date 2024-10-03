@@ -11,3 +11,6 @@ brew bundle install --file=Brewfile
 
 # copy shell config
 ln -sf $(pwd)/.zshrc ~/.zshrc
+
+# copy git config
+ln -sf $(pwd)/.gitconfig ~/.gitconfig
