@@ -1,9 +1,13 @@
-#!/usr/bin/env bash
+#!/bin/bash
 cd "$(dirname "$0")"
 
-ln -sf $(pwd)/.bash_profile ~/.bash_profile
-ln -sf $(pwd)/.bashrc ~/.bashrc
-
-if type fish >/dev/null 2>&1; then
-    ln -sf $(pwd)/config.fish ~/.config/fish/config.fish
+# instal homebrew
+if ! type brew &> /dev/null ; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+    echo "Since Homebrew is already installed, skip this phase and proceed."
 fi
+brew bundle install --file=Brewfile
+
+# copy shell config
+ln -sf $(pwd)/.zshrc ~/.zshrc

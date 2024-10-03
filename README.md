@@ -12,5 +12,5 @@ $ source initialize.sh
 
 ## What's in the box?
 
-* .bash_profile
-* .bashrc
+* .zshrc
+* Brewfile
