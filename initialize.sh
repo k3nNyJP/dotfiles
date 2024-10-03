@@ -6,3 +6,6 @@ ln -sf $(pwd)/.zshrc ~/.zshrc
 
 # copy git config
 ln -sf $(pwd)/.user_gitconfig ~/.gitconfig
+
+# copy npm config
+ln -sf $(pwd)/.npmrc ~/.npmrc
