@@ -1,6 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
 tap "kylef/formulae"
 tap "ngrok/ngrok"
 brew "act"
