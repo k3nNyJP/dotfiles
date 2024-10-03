@@ -5,4 +5,4 @@ cd "$(dirname "$0")"
 ln -sf $(pwd)/.zshrc ~/.zshrc
 
 # copy git config
-ln -sf $(pwd)/.gitconfig ~/.gitconfig
+ln -sf $(pwd)/.user_gitconfig ~/.gitconfig
