@@ -33,6 +33,8 @@ $ brew bundle install --file=Brewfile
 $ source initialize.sh
 ```
 
+.npmrc に Github の認証トークンを渡すところがあるので、自分のトークンに置き換える。
+
 ## What's in the box?
 
 * .zshrc
