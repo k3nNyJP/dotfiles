@@ -1,0 +1,40 @@
+[user]
+	name = k3nNyJP
+	email = k3nny.51rcy@gmail.com
+[core]
+	editor = code -w
+[color]
+	ui = true
+[difftool "vscode"]
+	cmd = code -w --diff $LOCAL $REMOTE
+[diff]
+	tool = vscode
+[alias]
+	tree = log --graph --branches --remotes --tags --format=format:'%C(Yellow)[%h]%Creset %<(80,trunc)%s %C(cyan)(%cN, %cd) %C(auto)%d' --date-order --date=format:'%Y/%m/%d %H:%M:%S'
+	tr = log --graph --branches --tags --format=format:'%C(Yellow)[%h]%Creset %<(80,trunc)%s %C(cyan)(%cN, %cd) %C(auto)%d' --date-order --date=format:'%Y/%m/%d %H:%M:%S'
+	t = tree
+	d = difftool -y -t vscode
+	b = branch
+	ba = branch -avv
+	s = status --short
+	f = fetch
+	fu = fetch upstream
+	p = pull
+	co = commit
+	sw = switch
+[fetch]
+	prune = true
+[merge]
+	ff = false
+[pull]
+	ff = only
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/local/bin/gh auth git-credential
+[init]
+	defaultBranch = main
