@@ -38,3 +38,5 @@
 	helper = !/usr/local/bin/gh auth git-credential
 [init]
 	defaultBranch = main
+[ghq]
+	root=~/Projects
